@@ -38,6 +38,7 @@ Lộ trình triển khai chi tiết, đi từ
 - [x] Bổ sung đầu thu siêu âm TCT40-16R để thu tín hiệu siêu âm và tích hợp vào hệ thống làm stereo mode
 - [x] Bổ sung mạch ổn áp DC-DC 1 MHz 3/6V-12V để cung cấp nguồn ổn định cho hệ thống
 - [x] Thêm các linh kiện bổ sung để tách nguồn xuống 9V, 5V, 3.3V cho các thành phần khác nhau của hệ thống
+- [ ] Bổ sung LDO cho mạch để giảm nhiễu và cải thiện chất lượng âm thanh
 - [ ] Kiểm tra lại kích thước và bố trí linh kiện đã về hàng để đảm bảo thiết kế PCB phù hợp và tối ưu
 - [ ] Đặt gia công in mạch
 
