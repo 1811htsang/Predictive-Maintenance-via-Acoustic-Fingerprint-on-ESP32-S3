@@ -38,14 +38,17 @@ Lộ trình triển khai chi tiết, đi từ
 - [x] Bổ sung đầu thu siêu âm TCT40-16R để thu tín hiệu siêu âm và tích hợp vào hệ thống làm stereo mode
 - [x] Bổ sung mạch ổn áp DC-DC 1 MHz 3/6V-12V để cung cấp nguồn ổn định cho hệ thống
 - [x] Thêm các linh kiện bổ sung để tách nguồn xuống 9V, 5V, 3.3V cho các thành phần khác nhau của hệ thống
-- [ ] Bổ sung LDO cho mạch để giảm nhiễu và cải thiện chất lượng âm thanh
+- [ ] Cân nhắc bổ sung LDO cho mạch để giảm nhiễu và cải thiện chất lượng âm thanh
 - [ ] Kiểm tra lại kích thước và bố trí linh kiện đã về hàng để đảm bảo thiết kế PCB phù hợp và tối ưu
 - [ ] Đặt gia công in mạch
 
 ## Giai đoạn Xử lý dữ liệu & Truyền thông
 
 - [x] Lựa chọn dataset và thuật toán xử lý dữ liệu âm thanh phù hợp để kiểm chứng khả năng thu thập dữ liệu âm thanh chất lượng cao của hệ thống
-- [ ] Thiết kế server nội bộ để ESP32 giao tiếp và truyền dữ liệu âm thanh về kit xử lý trung tâm
+- [x] Thiết kế server nội bộ để ESP32 giao tiếp và truyền dữ liệu âm thanh về kit xử lý trung tâm
+- [ ] Cấu hình TCP/IP trên linux server để nhận dữ liệu âm thanh từ ESP32
+- [ ] Bổ sung driver giao tiếp sử dụng TCP/IP trên lwip để ESP32 có thể truyền dữ liệu âm thanh về server nội bộ
+- [ ] Bổ sung driver cho xử lý thuật toán MFCC để phân tích và trích xuất đặc trưng âm thanh từ dữ liệu thu thập được
 - [ ] Thiết kế driver giao tiếp giữa ESP32 và server nội bộ
 - [ ] Tìm hiểu cơ chế giao tiếp với PSRAM để tận dụng làm ring buffer cho dữ liệu âm thanh
 - [ ] Cân nhắc vấn đề sử dụng Core CIEDPC để xử lý hệ thống theo hướng sự kiện (event-driven) để tối ưu hiệu suất và giảm độ trễ với 2 core của ESP32
