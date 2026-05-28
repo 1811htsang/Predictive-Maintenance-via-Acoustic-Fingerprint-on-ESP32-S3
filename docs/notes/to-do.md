@@ -38,14 +38,17 @@ Lộ trình triển khai chi tiết, đi từ
 - [x] Bổ sung đầu thu siêu âm TCT40-16R để thu tín hiệu siêu âm và tích hợp vào hệ thống làm stereo mode
 - [x] Bổ sung mạch ổn áp DC-DC 1 MHz 3/6V-12V để cung cấp nguồn ổn định cho hệ thống
 - [x] Thêm các linh kiện bổ sung để tách nguồn xuống 9V, 5V, 3.3V cho các thành phần khác nhau của hệ thống
-- [ ] Cân nhắc bổ sung LDO cho mạch để giảm nhiễu và cải thiện chất lượng âm thanh
-- [ ] Kiểm tra lại kích thước và bố trí linh kiện đã về hàng để đảm bảo thiết kế PCB phù hợp và tối ưu
+- [x] Cân nhắc bổ sung LDO cho mạch để giảm nhiễu và cải thiện chất lượng âm thanh. Loại bỏ do độ phức tạp phải sửa đổi thiết kế PCB và tăng chi phí
+- [x] Kiểm tra lại kích thước và bố trí linh kiện đã về hàng để đảm bảo thiết kế PCB phù hợp và tối ưu
+- [ ] Kiểm tra kích thước của jack cắm PJ-342S để đảm bảo tương thích với thiết kế PCB
 - [ ] Đặt gia công in mạch
 
 ## Giai đoạn Xử lý dữ liệu & Truyền thông
 
 - [x] Lựa chọn dataset và thuật toán xử lý dữ liệu âm thanh phù hợp để kiểm chứng khả năng thu thập dữ liệu âm thanh chất lượng cao của hệ thống
-- [x] Thiết kế server nội bộ để ESP32 giao tiếp và truyền dữ liệu âm thanh về kit xử lý trung tâm
+- [x] Thiết kế server nội bộ để ESP32 giao tiếp và truyền dữ liệu âm thanh về kit xử lý trung tâm (sử dụng WSL trên Windows để phát triển và kiểm thử như 1 server nội bộ)
+- [ ] Bổ sung driver thiết kế cho thuật toán MFCC bao gồm (pre-emphasis, frame-split, windowing, fft, filter bank, dct) để phân tích và trích xuất đặc trưng âm thanh từ dữ liệu thu thập được
+- [ ] Bổ sung driver tính toán rms, crest factor, spectral kurtosis để phân tích đặc trưng âm thanh và đánh giá chất lượng tín hiệu
 - [ ] Cấu hình TCP/IP trên linux server để nhận dữ liệu âm thanh từ ESP32
 - [ ] Bổ sung driver giao tiếp sử dụng TCP/IP trên lwip để ESP32 có thể truyền dữ liệu âm thanh về server nội bộ
 - [ ] Bổ sung driver cho xử lý thuật toán MFCC để phân tích và trích xuất đặc trưng âm thanh từ dữ liệu thu thập được
